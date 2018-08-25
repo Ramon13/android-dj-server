@@ -1,0 +1,13 @@
+
+.nextBtn {
+    -fx-background-color: #a0fd07; /* Green */
+    -fx-border: none;
+    -fx-color: white;
+    -fx-padding: 15px 32px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-margin: 4px 2px;
+    -fx-cursor: pointer;
+}

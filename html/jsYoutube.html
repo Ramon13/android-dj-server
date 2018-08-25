@@ -1,0 +1,195 @@
+ <div id="player"></div>
+
+    <script src="http://www.youtube.com/player_api"></script>
+
+    <script>
+
+        // create youtube player
+       var player;
+	   var time;
+       var ready = false;
+       var newTab;
+var videoIdLink = 'ye5BuYf8q4o'; 
+
+        function onYouTubePlayerAPIReady() {
+        	
+            player = new YT.Player('player', {
+          	 videoId: videoIdLink,
+              events: {
+                onReady: onPlayerReady
+              }
+            });
+
+        }
+
+        // autoplay video
+        function onPlayerReady(event) {
+      		time = player.getDuration();
+      		window.close();
+      		var xmlHttp = new XMLHttpRequest();	
+			xmlHttp.open( "GET", "http://localhost:3330?videoDuration=" + time, false );
+		    xmlHttp.send(null);  
+		    
+      	 }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
